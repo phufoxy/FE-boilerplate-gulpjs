@@ -1,0 +1,322 @@
+.box-btn-call {
+  position: fixed;
+  right: 16px;
+  top: 98px;
+  width: 60px;
+  z-index: 8;
+}
+.phonering-alo-phone.phonering-alo-static {
+  opacity:.6
+}
+
+.phonering-alo-phone.phonering-alo-hover,.phonering-alo-phone:hover {
+  opacity:1
+}
+
+.phonering-alo-ph-circle {
+  width:60px;
+  height:60px;
+  top:0;
+  left:0;
+  position:absolute;
+  background-color:transparent;
+  border-radius:100% !important;
+  border:2px solid rgba(30,30,30,0.4);
+  border:2px solid #C3E2C0 9;
+  opacity:.1;
+  -webkit-animation:phonering-alo-circle-anim 1.2s infinite ease-in-out;
+  animation:phonering-alo-circle-anim 1.2s infinite ease-in-out;
+  transition:all .5s;
+  -webkit-transform-origin:50% 50%;
+  -ms-transform-origin:50% 50%;
+  transform-origin:50% 50%
+}
+
+.phonering-alo-phone.phonering-alo-active .phonering-alo-ph-circle {
+  -webkit-animation:phonering-alo-circle-anim 1.1s infinite ease-in-out!important;
+  animation:phonering-alo-circle-anim 1.1s infinite ease-in-out!important
+}
+
+.phonering-alo-phone.phonering-alo-static .phonering-alo-ph-circle {
+  -webkit-animation:phonering-alo-circle-anim 2.2s infinite ease-in-out!important;
+  animation:phonering-alo-circle-anim 2.2s infinite ease-in-out!important
+}
+
+.phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-circle,.phonering-alo-phone:hover .phonering-alo-ph-circle {
+  border-color:#2EA922;
+  opacity:.5
+}
+
+.phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-circle,.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-circle {
+  border-color:#75eb50 ;
+  border-color:#baf5a7;
+  opacity:.5
+}
+
+.phonering-alo-phone.phonering-alo-green .phonering-alo-ph-circle {
+  border-color:#2EA922 ;
+  border-color:#C3E2C0;
+  opacity:.5
+}
+
+.phonering-alo-phone.phonering-alo-gray.phonering-alo-hover .phonering-alo-ph-circle,.phonering-alo-phone.phonering-alo-gray:hover .phonering-alo-ph-circle {
+  border-color:#ccc;
+  opacity:.5
+}
+
+.phonering-alo-phone.phonering-alo-gray .phonering-alo-ph-circle {
+  border-color:#75eb50 ;
+  opacity:.5
+}
+
+.phonering-alo-ph-circle-fill {
+  width:60px;
+  height:60px;
+  top:0;
+  left:0;
+  position:absolute;
+  background-color: #000;
+  border-radius:100% !important;
+  border:2px solid transparent;
+  -webkit-animation:phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+  animation:phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+  transition:all .5s;
+  -webkit-transform-origin:50% 50%;
+  -ms-transform-origin:50% 50%;
+  transform-origin:50% 50%
+}
+.mail-ring {
+  &:hover {
+    .phonering-alo-ph-img-circle {
+      background-color: #b97d2d !important;
+    }
+  }
+  .phonering-alo-ph-circle {
+    top: 68px;
+    border-color: #84591F !important;
+  }
+  .phonering-alo-phone {
+    &:hover {
+      border: 1px solid #84591F;
+    }
+  }
+  .phonering-alo-ph-circle-fill {
+    top: 68px;
+    background-color: #84591F !important;
+  }
+  .phonering-alo-ph-img-circle {
+    top: 75px;
+    background-color: #84591F !important;
+  }
+  .phonering-alo-hover, .phonering-alo-phone:hover {
+    opacity: 1;
+  }
+}
+
+.phonering-alo-phone.phonering-alo-active .phonering-alo-ph-circle-fill {
+  -webkit-animation:phonering-alo-circle-fill-anim 1.7s infinite ease-in-out!important;
+  animation:phonering-alo-circle-fill-anim 1.7s infinite ease-in-out!important
+}
+
+.phonering-alo-phone.phonering-alo-static .phonering-alo-ph-circle-fill {
+  -webkit-animation:phonering-alo-circle-fill-anim 2.3s infinite ease-in-out!important;
+  animation:phonering-alo-circle-fill-anim 2.3s infinite ease-in-out!important;
+  opacity:0!important
+}
+
+.phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-circle-fill,.phonering-alo-phone:hover .phonering-alo-ph-circle-fill {
+  background-color:rgba($color: #2EA922, $alpha: 1.0);
+  background-color:#2EA922 9;
+  opacity:.75!important
+}
+
+.phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-circle-fill,.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-circle-fill {
+  background-color:#2EA922;
+  background-color:#baf5a7 9;
+  opacity:.75!important
+}
+
+.phonering-alo-phone.phonering-alo-green .phonering-alo-ph-circle-fill {
+  background-color:rgba($color: #2EA922, $alpha: 1.0);
+  background-color:#a6e3fa 9
+}
+
+.phonering-alo-phone.phonering-alo-gray.phonering-alo-hover .phonering-alo-ph-circle-fill,.phonering-alo-phone.phonering-alo-gray:hover .phonering-alo-ph-circle-fill {
+  background-color:rgba(204,204,204,0.5);
+  background-color:#ccc 9;
+  opacity:.75!important
+}
+
+.phonering-alo-phone.phonering-alo-gray .phonering-alo-ph-circle-fill {
+  background-color:#2EA922;
+  opacity:.75!important
+}
+
+.phonering-alo-ph-img-circle {
+  width:46px;
+  height:46px;
+  top:7px;
+  left:7px;
+  position:absolute;
+  z-index: 1;
+  background-size: 30px;
+  border-radius:100% !important;
+  border:2px solid transparent;
+  -webkit-animation:phonering-alo-circle-img-anim 1s infinite ease-in-out;
+  animation:phonering-alo-circle-img-anim 1s infinite ease-in-out;
+  -webkit-transform-origin:50% 50%;
+  -ms-transform-origin:50% 50%;
+  transform-origin:50% 50%;
+  i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+.phonering-alo-phone.phonering-alo-active .phonering-alo-ph-img-circle {
+  -webkit-animation:phonering-alo-circle-img-anim 1s infinite ease-in-out!important;
+  animation:phonering-alo-circle-img-anim 1s infinite ease-in-out!important
+}
+
+.phonering-alo-phone.phonering-alo-static .phonering-alo-ph-img-circle {
+  -webkit-animation:phonering-alo-circle-img-anim 0 infinite ease-in-out!important;
+  animation:phonering-alo-circle-img-anim 0 infinite ease-in-out!important
+}
+
+.phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-img-circle,.phonering-alo-phone:hover .phonering-alo-ph-img-circle {
+  background-color:#2EA922
+}
+
+.phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-img-circle,.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-img-circle {
+  background-color:#75eb50;
+  background-color:#75eb50 9
+}
+
+.phonering-alo-phone.phonering-alo-green .phonering-alo-ph-img-circle {
+  background-color:#2EA922;
+  background-color:#2EA922 9
+}
+
+.phonering-alo-phone.phonering-alo-gray.phonering-alo-hover .phonering-alo-ph-img-circle,.phonering-alo-phone.phonering-alo-gray:hover .phonering-alo-ph-img-circle {
+  background-color:#ccc
+}
+
+.phonering-alo-phone.phonering-alo-gray .phonering-alo-ph-img-circle {
+  background-color:#75eb50
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity:0;
+    -webkit-transform:translate3d(100%,0,0);
+    -ms-transform:translate3d(100%,0,0);
+    transform:translate3d(100%,0,0)
+  }
+
+  100% {
+    opacity:1;
+    -webkit-transform:none;
+    -ms-transform:none;
+    transform:none
+  }
+}
+
+@keyframes fadeOutRight {
+  0% {
+    opacity:1
+  }
+
+  100% {
+    opacity:0;
+    -webkit-transform:translate3d(100%,0,0);
+    -ms-transform:translate3d(100%,0,0);
+    transform:translate3d(100%,0,0)
+  }
+}
+
+@keyframes phonering-alo-circle-anim {
+  0% {
+    -webkit-transform:rotate(0) scale(.5) skew(1deg);
+            transform:rotate(0) scale(.5) skew(1deg);
+    opacity:.1
+  }
+
+  30% {
+    -webkit-transform:rotate(0) scale(.7) skew(1deg);
+            transform:rotate(0) scale(.7) skew(1deg);
+    opacity:.5
+  }
+
+  100% {
+    -webkit-transform:rotate(0) scale(1) skew(1deg);
+            transform:rotate(0) scale(1) skew(1deg);
+    opacity:.1
+  }
+}
+
+@keyframes phonering-alo-circle-fill-anim {
+  0% {
+    -webkit-transform:rotate(0) scale(.7) skew(1deg);
+            transform:rotate(0) scale(.7) skew(1deg);
+    opacity:.2
+  }
+
+  50% {
+    -webkit-transform:rotate(0) scale(1) skew(1deg);
+            transform:rotate(0) scale(1) skew(1deg);
+    opacity:.2
+  }
+
+  100% {
+    -webkit-transform:rotate(0) scale(.7) skew(1deg);
+            transform:rotate(0) scale(.7) skew(1deg);
+    opacity:.2
+  }
+}
+
+@keyframes phonering-alo-circle-img-anim {
+  0% {
+    -webkit-transform:rotate(0) scale(1) skew(1deg);
+            transform:rotate(0) scale(1) skew(1deg)
+  }
+
+  10% {
+    -webkit-transform:rotate(-25deg) scale(1) skew(1deg);
+            transform:rotate(-25deg) scale(1) skew(1deg)
+  }
+
+  20% {
+    -webkit-transform:rotate(25deg) scale(1) skew(1deg);
+            transform:rotate(25deg) scale(1) skew(1deg)
+  }
+
+  30% {
+    -webkit-transform:rotate(-25deg) scale(1) skew(1deg);
+            transform:rotate(-25deg) scale(1) skew(1deg)
+  }
+
+  40% {
+    -webkit-transform:rotate(25deg) scale(1) skew(1deg);
+            transform:rotate(25deg) scale(1) skew(1deg)
+  }
+
+  50% {
+    -webkit-transform:rotate(0) scale(1) skew(1deg);
+            transform:rotate(0) scale(1) skew(1deg)
+  }
+
+  100% {
+    -webkit-transform:rotate(0) scale(1) skew(1deg);
+            transform:rotate(0) scale(1) skew(1deg)
+  }
+}
+@include breakpoint(767) {
+  .box-btn-call {
+    top: auto;
+    bottom: 170px;
+  }
+}

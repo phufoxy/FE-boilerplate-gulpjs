@@ -1,0 +1,256 @@
+@include breakpoint(767) {
+  .introduce-container {
+    flex-wrap: wrap;
+    .introduce-content {
+      width: 100%;
+      &::after {
+        display: none;
+      }
+    }
+    .introduce-image {
+      width: 100%;
+    }
+  }
+
+  .product-slider {
+    flex-wrap: wrap;
+    .produce-image {
+      width: 50%;
+    }
+  }
+
+  .title-hero-banner {
+    @include rem("font-size", 36);
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-info {
+    margin-bottom: 30px;
+    width: 100%;
+
+    .title-info {
+      margin-bottom: 20px;
+    }
+  }
+
+  .title-info {
+    @include rem("font-size", 24);
+  }
+
+  .has-image-info {
+    .item-info {
+      margin-right: 0 !important;
+      padding: 0 !important;
+      margin-left: 0 !important;
+      flex-direction: column;
+      margin-bottom: 15px;
+
+      .content-rotate {
+        display: none;
+      }
+
+      .box-img-info {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 !important;
+        order: 0 !important;
+      }
+
+      .box-content-info {
+        padding: 20px;
+        margin: 0 !important;
+      }
+    }
+  }
+
+  // Footer
+  .footer-container {
+    padding: 20px 0;
+    font-size: 12px;
+
+    .col-md-5 {
+      order: 1;
+    }
+
+    .box-logo-footer {
+      order: 0;
+      text-align: left;
+      margin-bottom: 20px;
+
+      img {
+        max-height: 49px;
+      }
+    }
+
+    .box-right-footer {
+      order: 2;
+      margin-top: 13px;
+      text-align: left;
+    }
+  }
+
+  .left-footer {
+    padding-left: 18px;
+  }
+
+  .box-social-footer {
+    justify-content: flex-start;
+
+    .label-social {
+      margin-left: 0;
+    }
+  }
+
+  // Tien ich
+  .item-tienich {
+    padding: 7.5px 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-info.custom-hero-margin {
+    margin-bottom: 22px;
+  }
+
+  .visit-info {
+    &.visit-right {
+      .list-info {
+        width: 100%;
+        margin-left: 0%;
+      }
+    }
+
+    .list-info {
+      width: 100%;
+    }
+  }
+
+  // Tham quan
+  .has-image-visit .item-visit {
+    margin-bottom: 30px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+    .box-img-visit {
+      width: calc(100vw - 15px);
+      max-width: 100vw;
+      order: 1 !important;
+
+      .content-rotate {
+        display: none;
+      }
+    }
+
+    .box-content-visit {
+      padding-left: 20px !important;
+      padding: 25px 20px;
+      left: 0 !important;
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+      order: 2 !important;
+      margin-top: -40px;
+
+      .title-info {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .category {
+    @include rem("font-size", 15);
+    margin-bottom: 5px;
+  }
+
+  .box-arrow-slick {
+    margin-top: 20px;
+
+    button {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+  }
+
+  // Tien do
+  .timeline {
+    margin-left: 0;
+    padding: 0 0 0 30px;
+
+    .event {
+      padding-top: 37px;
+
+      &:before {
+        left: 0;
+        top: 8px;
+      }
+
+      .box-dot {
+        left: -47px;
+        padding: 10px !important;
+      }
+    }
+
+    .item-timeline {
+      padding: 0 4px;
+    }
+  }
+
+  .tab-content {
+    padding: 0 7.5px;
+
+    .item-tienich {
+      padding: 7.5px;
+    }
+  }
+
+  .box-content-hinh-anh {
+    padding: 10px 0 0;
+  }
+
+  .tab-page-hinhanh {
+    .nav-item {
+      padding: 0 15px;
+    }
+
+    .nav-link {
+      @include rem("font-size", 22);
+    }
+  }
+
+  .page-news {
+    padding: 7.5px 0;
+  }
+
+  .pagenavi {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+
+  // Lien he
+  .title-contact {
+    @include rem("font-size", 24);
+    margin-bottom: 15px;
+  }
+
+  .box-contact {
+    margin-top: 0;
+  }
+
+  .box-contact .box-map {
+    width: 100vw;
+    margin-left: calc(50% - 50vw - 8px);
+  }
+}
+
+@include breakpoint(414) {
+  .box-contact .box-map {
+    margin-left: calc(50% - 50vw);
+  }
+  .product-slider {
+    flex-wrap: wrap;
+    .produce-image {
+      width: 100%;
+    }
+  }
+}

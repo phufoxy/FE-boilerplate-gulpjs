@@ -1,0 +1,198 @@
+.achievement-container {
+  position: relative;
+  background-image: url("../../images/achievement.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  z-index: 2;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.55);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .content-achievement {
+    text-align: center;
+    .number {
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 75px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: $text_yellow;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 22px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $text_white;
+    }
+  }
+}
+
+.product-slider {
+  display: flex;
+  .produce-image {
+    position: relative;
+    width: 25%;
+    height: 400px;
+    z-index: 2;
+    &:hover {
+      &::after {
+        visibility: visible;
+        opacity: 1;
+        height: 100%;
+        transition: all 0.3s ease-in-out;
+      }
+      .product-content {
+        visibility: visible;
+        opacity: 1;
+        top: 50%;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba($color: #000000, $alpha: 0.55);
+      width: 100%;
+      height: 0%;
+      z-index: 1;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .product-content {
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+      padding: 10px;
+      visibility: hidden;
+      opacity: 0;
+
+      .title {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+      .description {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        /* or 143% */
+
+        text-align: center;
+
+        color: #ffffff;
+      }
+
+      .link {
+        background-color: $text_yellow;
+        border-radius: 2px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $text_white;
+        padding: 10px;
+        border-radius: 4px;
+        &:hover {
+          color: $text_white;
+        }
+      }
+    }
+  }
+}
+
+.news-container {
+  background-color: #f7f9fb;
+  .news-card {
+    box-shadow: 0 0 10px -2px rgba($color: #000000, $alpha: 0.35);
+    background-color: $bg_white;
+    border-radius: 4px;
+    overflow: hidden;
+    .news-images {
+      height: 243px;
+      max-height: 243px;
+      width: 100%;
+      overflow: hidden;
+      .img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.2);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+    .news-content {
+      padding: 20px;
+      .title {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 22px;
+        color: $text_dark;
+      }
+      .link {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        color: $text_yellow;
+        &::after {
+          content: url("../../images/arrow-left.svg");
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+.partner-card {
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 100px;
+  .partner-image {
+    img {
+      width: 100%;
+    }
+  }
+}
